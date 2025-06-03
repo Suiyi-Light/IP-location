@@ -6,6 +6,7 @@ Version: 2.0.0
 Requires PHP: 5.6
 Author URI: https://blog.suiyil.cn/ip-location
 Plugin URI: https://github.com/Suiyi-Light/ip-location/
+License: GPL2
 */
 
 if (!defined('ABSPATH')) {
