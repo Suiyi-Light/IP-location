@@ -57,11 +57,11 @@ function ip_location_settings_page() {
                     </td>
                 </tr>
                 <tr>
-                    <th><label for="ip_location_enable_log">启用错误日志</label></th>
+                    <th><label for="ip_location_enable_log">启用API错误记录</label></th>
                     <td>
                         <input type="checkbox" id="ip_location_enable_log" name="ip_location_enable_log" 
                                value="1" <?php checked(1, get_option('ip_location_enable_log'), true); ?>>
-                        <p class="description">将在debug.log中记录API错误信息</p>
+                        <p class="description">将通过<code>error_log</code>在错误日志中记录API错误信息</p>
                     </td>
                 </tr>
             </table>
