@@ -1,5 +1,5 @@
 <?php
-/*Plugin Name: IP属地显示
+/*Plugin Name: IP属地显示-Argon专版
 Description: 显示评论归属地，使用腾讯位置ip定位api，国内显示省级行政区，国外显示国家。
 Author: 随意之光
 Version: 2.0.0
@@ -323,5 +323,6 @@ function ip_location_admin_script() {
     <?php
 }
 
-// 挂载到评论区
-add_filter('comment_text', 'ip_location_info', 10, 1);
+// 挂载到主题评论ua
+add_filter("argon_comment_ua_icon", "ip_location_info", 10, 1);
+
