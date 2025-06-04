@@ -181,14 +181,18 @@ function ip_location_info($comment_text) {
     // 如果最终有位置信息则显示
     if ($location && $location !== "功能未启用") {
         $comment_text .= '<div class="comment-useragent"><img src="' . $location_icon . '" width="16" height="16" alt="位置图标" />&nbsp;' . esc_html($location) . '</div>';
-    } 
+    }    
+    //无法获取评论信息时显示
+    elseif (!$comment) {
+        $comment_text .= '<div class="comment-useragent ip-location-notice"><img src="' . $location_icon . '" width="16" height="16" alt="位置图标" />&nbsp;获取评论信息失败</div> ';
+    }
     // 没有API密钥时显示提示
     elseif (!$has_api_key) {
         $comment_text .= '<div class="comment-useragent ip-location-notice"><img src="' . $location_icon . '" width="16" height="16" alt="位置图标" />&nbsp;请配置API密钥启用功能</div>';
     }
     // 无法获取IP地址时显示
-    elseif (!$comment || !$comment->comment_author_IP) {
-        $comment_text .= '<div class="comment-useragent ip-location-notice"><img src="' . $location_icon . '" width="16" height="16" alt="位置图标" />&nbsp;未获取评论IP地址</div> ';
+    elseif (!$comment->comment_author_IP) {
+        $comment_text .= '<div class="comment-useragent ip-location-notice"><img src="' . $location_icon . '" width="16" height="16" alt="位置图标" />&nbsp;获取IP地址失败</div> ';
     }
     // 其他情况显示获取失败
     else {
