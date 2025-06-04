@@ -1,14 +1,14 @@
 # IP-location
 显示评论归属地，使用腾讯位置ip定位api，国内显示省级行政区，国外显示国家。
-# 功能
-1.当发表评论时请求腾讯位置api获取IP属地，成功获取后写入数据库。
-2.同一IP设置24小时缓存，避免一段时间同一IP重复请求。
-3.IP属地显示在评论区、后台评论页面，在后台提供一键更新获取IP属地功能。
+
 
 # 功能
 1.当发表评论时请求腾讯位置api获取IP属地，成功获取后写入数据库。
+
 2.同一IP设置24小时缓存，避免一段时间同一IP重复请求。
+
 3.IP属地显示在评论区、后台评论页面，在后台提供一键更新获取IP属地功能。
+
 ![评论区](https://cdn.suiyil.cn/blog/uploads/2025/06/image-4.png "评论区")
 ![后台](https://cdn.suiyil.cn/blog/uploads/2025/06/image-2.png "后台")
 ![评论后台](https://cdn.suiyil.cn/blog/uploads/2025/06/image-3.png "评论后台")
@@ -23,8 +23,8 @@
 # 感谢
 1.easy-location（https://github.com/bigfa/easy-location）
 
-2. 为博客添 ip 归属地 [enjoy](https://mcenjoy.cn/1241/ [链接已失效])
+2.为博客添 ip 归属地 [enjoy](https://mcenjoy.cn/1241/ [链接已失效])
 
-3. 腾讯位置服务 (https://lbs.qq.com/)
+3.腾讯位置服务 (https://lbs.qq.com/)
 
 4.DeepSeek(https://chat.deepseek.com/) 、腾讯元宝 (https://yuanbao.tencent.com/)
